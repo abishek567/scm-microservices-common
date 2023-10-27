@@ -1,7 +1,5 @@
 package scmmicroservices.common.http.impl;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import scmmicroservices.common.http.Http;
 
