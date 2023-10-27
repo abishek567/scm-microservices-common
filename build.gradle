@@ -31,7 +31,19 @@ java {
 publishing {
 	publications {
 		maven(MavenPublication) {
+			groupId = 'scm-microservice'
+			artifactId = 'common'
+			version = '1.0'
 			from components.java
+
+			versionMapping {
+				usage('java-api') {
+					fromResolutionOf('runtimeClasspath')
+				}
+				usage('java-runtime') {
+					fromResolutionResult()
+				}
+			}
 		}
 	}
 }
