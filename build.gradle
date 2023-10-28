@@ -1,3 +1,5 @@
+import org.gradle.internal.Transformers
+
 plugins {
 	id 'java-library'
 	id 'org.springframework.boot' version '3.1.5'
@@ -13,7 +15,12 @@ java {
 	targetCompatibility = '17'
 }
 
-
+// Build executable jar
+tasks.jar {
+	enabled = true
+	// Remove `plain` postfix from jar file name
+	archiveClassifier.set("")
+}
 repositories {
 	mavenCentral()
 	maven { url "https://jitpack.io" }

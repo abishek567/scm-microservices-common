@@ -1,9 +1,7 @@
 package scmmicroservices.common.http.impl;
 
-import org.springframework.stereotype.Component;
 import scmmicroservices.common.http.Http;
 
-@Component
 public class HttpImpl implements Http {
 
     @Override
