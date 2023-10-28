@@ -10,17 +10,18 @@ plugins {
 group = 'scm-microservices'
 version = '0.0.1-SNAPSHOT'
 
+bootJar {
+	enabled(false)
+}
+jar {
+	enabled(true)
+	archiveClassifier = ''
+}
 java {
 	sourceCompatibility = '17'
 	targetCompatibility = '17'
 }
 
-// Build executable jar
-tasks.jar {
-	enabled = true
-	// Remove `plain` postfix from jar file name
-	archiveClassifier.set("")
-}
 repositories {
 	mavenCentral()
 	maven { url "https://jitpack.io" }
