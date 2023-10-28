@@ -26,19 +26,21 @@ repositories {
 	maven { url "https://jitpack.io" }
 }
 
-publishing {
-	publications {
-		maven(MavenPublication) {
-			groupId = 'com.github.abishek567'
-			artifactId = 'scm-microservices-common'
-			version = '1.0.15'
-			from components.java
-			versionMapping {
-				usage('java-api') {
-					fromResolutionOf('runtimeClasspath')
-				}
-				usage('java-runtime') {
-					fromResolutionResult()
+afterEvaluate {
+	publishing {
+		publications {
+			maven(MavenPublication) {
+				groupId = 'com.github.abishek567'
+				artifactId = 'scm-microservices-common'
+				version = '1.0.15'
+				from components.java
+				versionMapping {
+					usage('java-api') {
+						fromResolutionOf('runtimeClasspath')
+					}
+					usage('java-runtime') {
+						fromResolutionResult()
+					}
 				}
 			}
 		}
