@@ -10,10 +10,7 @@ version = '0.0.1-SNAPSHOT'
 
 java {
 	sourceCompatibility = '17'
-}
-
-jar {
-	enabled = true
+	targetCompatibility = '17'
 }
 
 repositories {
@@ -33,7 +30,6 @@ publishing {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
