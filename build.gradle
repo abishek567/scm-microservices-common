@@ -12,7 +12,8 @@ java {
 	sourceCompatibility = '17'
 	targetCompatibility = '17'
 }
-
+task jar(type: Jar, overwrite: true) {
+}
 repositories {
 	mavenCentral()
 	maven { url "https://jitpack.io" }
