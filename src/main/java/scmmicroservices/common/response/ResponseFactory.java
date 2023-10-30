@@ -8,29 +8,15 @@ import java.time.Instant;
 public class ResponseFactory {
 
     public static Response<Object> createErrorResponse(HttpStatus status, Exception exception) {
-        ResponseHeader responseHeader = ResponseHeader.builder()
-                .timestamp(Instant.now())
-                .status(status)
-                .error(exception)
-                .build();
+        ResponseHeader responseHeader = new ResponseHeader(Instant.now(), status, exception);
 
-        return Response.builder()
-                .responseHeader(responseHeader)
-                .responseBody(null)
-                .build();
+        return new Response<>(responseHeader, null);
     }
 
     public static Response<Object> createOkResponse(Object body) {
-        ResponseHeader responseHeader = ResponseHeader.builder()
-                .timestamp(Instant.now())
-                .status(HttpStatus.OK)
-                .error(null)
-                .build();
+        ResponseHeader responseHeader = new ResponseHeader(Instant.now(), HttpStatus.OK, null);
 
-        return Response.builder()
-                .responseHeader(responseHeader)
-                .responseBody(body)
-                .build();
+        return new Response<>(responseHeader, body);
     }
 
 }

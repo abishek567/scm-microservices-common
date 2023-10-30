@@ -12,6 +12,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import scmmicroservices.common.exception.CustomException;
 import scmmicroservices.common.response.Response;
 import scmmicroservices.common.utils.CommonUtils;
+
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -50,7 +51,7 @@ public class HttpImpl implements Http {
     }
 
     @Override
-    public <T, S> S post(String url, String path, T requestBody, Class<S> responseType) throws Exception{
+    public <T, S> S post(String url, String path, T requestBody, Class<S> responseType) throws Exception {
         Response response = Objects.requireNonNull(loadBalancedWebClient()
                 .post()
                 .uri(URL_PREFIX + url + path)
