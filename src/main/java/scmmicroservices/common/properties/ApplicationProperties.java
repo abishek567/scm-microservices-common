@@ -17,6 +17,16 @@ public class ApplicationProperties {
     @Value("${db.password}")
     private String dbPassword;
 
+    //db4free
+    @Value("${dbfree.driverclass}")
+    private String dbFreeDriverClass;
+    @Value("${dbfree.url:jdbc:mysql}")
+    private String dbFreeUrl;
+    @Value("${dbfree.username}")
+    private String dbFreeUserName;
+    @Value("${dbfree.password}")
+    private String dbFreePassword;
+
     @Value("${priceService}")
     private String priceService;
 
