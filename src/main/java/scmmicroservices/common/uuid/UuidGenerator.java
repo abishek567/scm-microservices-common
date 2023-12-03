@@ -1,4 +1,4 @@
-package scmmicroservices.common.Uuid;
+package scmmicroservices.common.uuid;
 
 import java.util.UUID;
 

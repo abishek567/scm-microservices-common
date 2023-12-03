@@ -11,6 +11,7 @@ import scmmicroservices.common.properties.constants.RequestConstants;
 
 @Component
 public class InterceptorHandler implements HandlerInterceptor {
+
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response,
