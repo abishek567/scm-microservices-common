@@ -1,4 +1,4 @@
-package scmmicroservices.common.webclient;
+package scm.common.webclient.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction;
@@ -9,9 +9,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
-import scmmicroservices.common.exception.CustomException;
-import scmmicroservices.common.response.Response;
-import scmmicroservices.common.utils.CommonUtils;
+import scm.common.exception.CustomException;
+import scm.common.response.Response;
+import scm.common.utils.CommonUtils;
+import scm.common.webclient.Http;
 
 import java.io.Serializable;
 import java.util.List;

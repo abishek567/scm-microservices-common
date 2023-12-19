@@ -1,4 +1,4 @@
-package scmmicroservices.common.dto;
+package scm.common.dto;
 
 import lombok.Data;
 

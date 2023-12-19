@@ -1,4 +1,4 @@
-package scmmicroservices.common.aop;
+package scm.common.aop;
 
 
 import org.springframework.core.MethodParameter;
@@ -9,8 +9,8 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.reactive.result.method.annotation.ResponseEntityExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
-import scmmicroservices.common.response.Response;
-import scmmicroservices.common.response.ResponseFactory;
+import scm.common.response.Response;
+import scm.common.response.ResponseFactory;
 
 @RestControllerAdvice
 public class CustomResponseBodyAdvice extends ResponseEntityExceptionHandler implements ResponseBodyAdvice<Object> {
