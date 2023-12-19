@@ -1,4 +1,4 @@
-package scmmicroservices.common.properties;
+package scm.common.properties;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;

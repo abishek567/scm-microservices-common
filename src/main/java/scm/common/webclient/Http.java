@@ -1,4 +1,4 @@
-package scmmicroservices.common.webclient;
+package scm.common.webclient;
 
 import java.util.List;
 import java.util.Map;
