@@ -1,4 +1,4 @@
-package scmmicroservices.common.exception;
+package scm.common.exception;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

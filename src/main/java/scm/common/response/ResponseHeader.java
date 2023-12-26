@@ -1,4 +1,4 @@
-package scmmicroservices.common.response;
+package scm.common.response;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
