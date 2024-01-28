@@ -1,4 +1,4 @@
-package com.scm.http.exception;
+package com.scm.common.exception;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

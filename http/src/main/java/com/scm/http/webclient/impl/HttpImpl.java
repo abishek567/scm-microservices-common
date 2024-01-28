@@ -1,8 +1,8 @@
 package com.scm.http.webclient.impl;
 
 import com.scm.common.utils.CommonUtils;
-import com.scm.http.exception.CustomException;
-import com.scm.http.response.Response;
+import com.scm.common.exception.CustomException;
+import com.scm.common.response.Response;
 import com.scm.http.webclient.Http;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction;

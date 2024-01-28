@@ -33,7 +33,7 @@ afterEvaluate {
             maven(MavenPublication) {
                 groupId = 'com.scm.common'
                 artifactId = 'common'
-                version = '1.0.0'
+                version = '1.0.2'
                 from components.java
                 versionMapping {
                     usage('java-api') {
