@@ -1,9 +1,8 @@
-package com.scm.http.utils;
+package com.scm.common.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.scm.common.utils.CommonUtils;
+import com.scm.common.constants.RequestHeaderConstants;
 import com.scm.data.dto.RoleDTO;
-import com.scm.http.constants.RequestHeaderConstants;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

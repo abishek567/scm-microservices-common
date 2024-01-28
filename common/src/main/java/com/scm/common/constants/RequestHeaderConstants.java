@@ -1,4 +1,4 @@
-package com.scm.http.constants;
+package com.scm.common.constants;
 
 public class RequestHeaderConstants {
 

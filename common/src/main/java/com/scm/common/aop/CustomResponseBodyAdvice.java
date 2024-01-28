@@ -1,15 +1,15 @@
-package com.scm.http.aop;
+package com.scm.common.aop;
 
-import com.scm.http.response.Response;
-import com.scm.http.response.ResponseFactory;
+import com.scm.common.response.Response;
+import com.scm.common.response.ResponseFactory;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.reactive.result.method.annotation.ResponseEntityExceptionHandler;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 @RestControllerAdvice
 public class CustomResponseBodyAdvice extends ResponseEntityExceptionHandler implements ResponseBodyAdvice<Object> {

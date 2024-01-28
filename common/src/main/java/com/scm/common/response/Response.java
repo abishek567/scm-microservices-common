@@ -1,4 +1,4 @@
-package com.scm.http.response;
+package com.scm.common.response;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

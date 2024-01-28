@@ -1,8 +1,8 @@
-package com.scm.http.aop;
+package com.scm.common.aop;
 
-import com.scm.http.exception.CustomException;
-import com.scm.http.response.Response;
-import com.scm.http.response.ResponseFactory;
+import com.scm.common.exception.CustomException;
+import com.scm.common.response.Response;
+import com.scm.common.response.ResponseFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
