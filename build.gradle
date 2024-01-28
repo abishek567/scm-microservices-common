@@ -32,7 +32,7 @@ afterEvaluate {
 			maven(MavenPublication) {
 				groupId = 'com.github.abishek567'
 				artifactId = 'scm-microservices-common'
-				version = '1.0.40'
+				version = '1.0.41'
 				from components.java
 				versionMapping {
 					usage('java-api') {
