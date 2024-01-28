@@ -32,7 +32,7 @@ afterEvaluate {
 			maven(MavenPublication) {
 				groupId = 'com.github.abishek567'
 				artifactId = 'scm-microservices-common'
-				version = '1.0.38'
+				version = '1.0.39'
 				from components.java
 				versionMapping {
 					usage('java-api') {
@@ -48,7 +48,7 @@ afterEvaluate {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-webflux:3.1.2'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'org.springframework.cloud:spring-cloud-commons:4.0.4'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
