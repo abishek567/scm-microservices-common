@@ -31,9 +31,9 @@ afterEvaluate {
     publishing {
         publications {
             maven(MavenPublication) {
-                groupId = 'com.github.abishek567'
+                groupId = 'com.scm.common'
                 artifactId = 'common'
-                version = '1.0.3'
+                version = '1.0.4'
                 from components.java
                 versionMapping {
                     usage('java-api') {
